@@ -16,7 +16,7 @@ ual-pattern-library-react-0.1.0.tgz
 /coverage
 
 # production
-/build
+#/build
 
 # misc
 .DS_Store
