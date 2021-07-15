@@ -1,0 +1,267 @@
+/*****************************************************************************************/
+/******************************** Start of Utility Classes *******************************/
+/*****************************************************************************************/
+@mixin padding-classes($breakpoint) {
+    @for $i from 0 through 5 {
+      .#{$breakpoint}-offset-top-#{$i} {
+        padding-top: $i * 4vw;
+      }
+      .#{$breakpoint}-offset-right-#{$i} {
+        padding-right: $i * 4vw;
+      }
+      .#{$breakpoint}-offset-bottom-#{$i} {
+        padding-bottom: $i * 4vw;
+      }
+      .#{$breakpoint}-offset-left-#{$i} {
+        padding-left: $i * 4vw;
+      }
+      .#{$breakpoint}-offset-left-#{$i} {
+        padding-left: $i * 4vw;
+      }
+      .#{$breakpoint}-remove-padding {
+        padding-left: 0 !important; // important is needed to overwrite the grid class padding
+      }
+    }
+  }
+  
+  @mixin margin-classes($breakpoint) {
+    @for $i from 0 through 5 {
+      .#{$breakpoint}-offset-margin-top-#{$i} {
+        margin-top: $i * 4vw;
+      }
+      .#{$breakpoint}-offset-margin-right-#{$i} {
+        margin-right: $i * 4vw;
+      }
+      .#{$breakpoint}-offset-margin-bottom-#{$i} {
+        margin-bottom: $i * 4vw;
+      }
+      .#{$breakpoint}-offset-margin-left-#{$i} {
+        margin-left: $i * 4vw;
+      }
+    }
+  }
+  
+  @mixin column-classes($breakpoint) {
+    // .grid-col-full-width {
+    //   grid-column: span 25;
+    //   padding-left: 0;
+    // }
+  
+    .grid-col-#{$breakpoint}-full-inner {
+      grid-column: span 24;
+      padding-left: $medium;
+    }
+  
+    .grid-col-#{$breakpoint}-1of2 {
+      grid-column: span 12;
+      padding-left: $medium;
+    }
+  
+    .grid-col-#{$breakpoint}-1of3 {
+      grid-column: span 8;
+      padding-left: $medium;
+    }
+  
+    .grid-col-#{$breakpoint}-2of3 {
+      grid-column: span 16;
+      padding-left: $medium;
+    }
+  
+    .grid-col-#{$breakpoint}-1of4 {
+      grid-column: span 6;
+      padding-left: $medium;
+    }
+  
+    .grid-col-#{$breakpoint}-3of4 {
+      grid-column: span 18;
+      padding-left: $medium;
+    }
+  }
+  /*****************************************************************************************/
+  /********************************* End of Utility Classes ********************************/
+  /*****************************************************************************************/
+  
+  
+    $colNum: 25-1;
+  
+    /*****************************************************************************************/
+    /******************************** Start of Grid Containers *******************************/
+    /*****************************************************************************************/
+    .grid-container-25 {
+        display: grid;
+        grid-template-columns: repeat(25, 1fr);
+    }
+  
+    .grid-container-23 {
+        display: grid;
+        grid-template-columns: repeat(23, 1fr);
+        padding: 0 4vw 0 4vw;
+    }
+  
+    .grid-container-21 {
+        display: grid;
+        grid-template-columns: repeat(22, 1fr);
+        padding: 0 8vw 0 4vw;
+    }
+  
+    .grid-container-19 {
+        display: grid;
+        grid-template-columns: repeat(20, 1fr);
+        padding: 0 12vw 0 8vw;
+    }
+    /*****************************************************************************************/
+    /******************************** End of Grid Containers *********************************/
+    /*****************************************************************************************/
+  
+  
+    /*****************************************************************************************/
+    /****************** All cols span full width on default mobile view **********************/
+    /*****************************************************************************************/
+    *[class*="grid-col-"] {
+      grid-column: 1 / span 24;
+      padding-left: 4vw;
+    }
+    /*****************************************************************************************/
+    /************** End of All cols span full width on default mobile view *******************/
+    /*****************************************************************************************/
+  
+    @media only screen and (max-width: $break-tablet) {
+      *[class*="grid-col-"] {
+        grid-column: 1 / span 23;
+        padding-left: 8vw;
+      }
+    }
+  
+    /* Small Screens */
+    /*****************************************************************************************/
+    /************ Start of Column settings for Small Screens - $mobile breakpoint ************/
+    /*****************************************************************************************/
+    @media only screen and (min-width: $break-mobile) {
+  
+  
+      // add in full-width col for mobiles, when overwritten on bigger screen classes,
+      // it won't revert back to full width as you go to the next larger screen size
+      .grid-col-full-width {
+        grid-column: span 25;
+        padding-left: 0;
+      }
+      @include column-classes(sm);
+      @include padding-classes(sm);
+      @include margin-classes(sm);
+    }
+    /*****************************************************************************************/
+    /************* End of Column settings for Small Screens - $mobile breakpoint *************/
+    /*****************************************************************************************/
+  
+  
+    /* Medium Screens */
+    /*****************************************************************************************/
+    /************ Start of Column settings for Medium Screens - $tablet breakpoint ***********/
+    /*****************************************************************************************/
+    @media only screen and (min-width: $break-tablet) {
+      @include column-classes(md);
+      @include padding-classes(md);
+      @include margin-classes(md);
+    }
+    /*****************************************************************************************/
+    /************* End of Column settings for Medium Screens - $tablet breakpoint ************/
+    /*****************************************************************************************/
+  
+  
+    /* Large Screens */
+    /*****************************************************************************************/
+    /************ Start of Column settings for Large Screens - $desktop breakpoint ***********/
+    /*****************************************************************************************/
+    @media only screen and (min-width: $break-desktop) {
+      @include column-classes(lg);
+      @include padding-classes(lg);
+      @include margin-classes(lg);
+    }
+    /*****************************************************************************************/
+    /************* End of Column settings for Large Screens - $desktop breakpoint ************/
+    /*****************************************************************************************/
+  
+  
+    /* XL Screens */
+    /*****************************************************************************************/
+    /*********** Start of Column settings for xLarge Screens - $ldesktop breakpoint **********/
+    /*****************************************************************************************/
+    @media only screen and (min-width: $break-xldesktop) {
+      @include column-classes(xl);
+      @include padding-classes(xl);
+      @include margin-classes(xl);
+    }
+    /*****************************************************************************************/
+    /************ End of Column settings for xLarge Screens - $ldesktop breakpoint ***********/
+    /*****************************************************************************************/
+  
+  
+    /* Grid Variations */
+    /*****************************************************************************************/
+    /********************* Start of Grid Variants - 19 & 21 Column Grids *********************/
+    /*****************************************************************************************/
+    .grid-container-offset-2 {
+      display: grid;
+      grid-template-columns: repeat(22, 1fr);
+      padding: 0 8vw 0 4vw;
+  
+      *[class*="grid-col-"] {
+        grid-column: 1 / span 23;
+        padding-left: 4vw;
+      }
+  
+      .grid-col-full {
+        margin-left: 0;
+        grid-column: 1 / span 23;
+        padding-left: 4vw;
+      }
+    }
+  
+    .grid-container-offset-3 {
+      display: grid;
+      grid-template-columns: repeat(20, 1fr);
+      padding: 0 12vw 0 8vw;
+  
+      *[class*="grid-col-"] {
+        grid-column: 1 / span 21;
+        padding-left: 4vw;
+      }
+  
+      .grid-col-full {
+        margin-left: 0;
+        grid-column: 1 / span 21;
+        padding-left: 4vw;
+      }
+    }
+  
+    @media (min-width:$break-tablet) {
+      .grid-container-offset-2 {
+        .grid-col-md-1of2 {
+          grid-column: span 11;
+        }
+      }
+  
+      .grid-container-offset-3 {
+        .grid-col-md-1of2 {
+          grid-column: span 10;
+        }
+      }
+    }
+  
+    @media (min-width:$break-desktop) {
+      .grid-container-offset-2 {
+        .grid-col-lg-1of2 {
+          grid-column: span 11;
+        }
+      }
+  
+      .grid-container-offset-3 {
+        .grid-col-lg-1of2 {
+          grid-column: span 10;
+        }
+      }
+    }
+  
+    /*****************************************************************************************/
+    /********************** End of Grid Variants - 19 & 21 Column Grids **********************/
+    /*****************************************************************************************/
