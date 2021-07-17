@@ -1284,6 +1284,23 @@ p {
   background: #F9F9F9;
 }
 
+.footer-slogan {
+  font-size: 42px;
+  font-weight: 900;
+  padding: 0;
+  margin: 0;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  line-height: 100%;
+}
+.footer-slogan span {
+  display: block;
+  padding-top: 1vw;
+}
+.footer-slogan span::before {
+  content: attr(data-text);
+}
+
 ul.navigation {
   list-style: none;
   margin: 0;
@@ -1333,4 +1350,36 @@ ul.hiddenlinks li a:focus {
   width: auto;
   overflow: hidden;
   clip: auto;
+}
+
+.footer-nav {
+  margin-top: 4vw;
+}
+.footer-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: repeat(17, 1fr);
+  display: grid;
+}
+.footer-nav ul li {
+  margin: 0;
+  padding: 0;
+  grid-column: span 8;
+  margin-bottom: 4vw;
+}
+.footer-nav ul li a {
+  color: #111;
+}
+
+.notification {
+  background: #000000;
+  color: #FFFFFF;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+.notification p {
+  padding: 1vw;
+  margin: 0;
 }

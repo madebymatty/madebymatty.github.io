@@ -1,3 +1,23 @@
 .footer {
     background: #F9F9F9;
 }
+
+.footer-slogan {
+
+    font-size: 42px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    line-height: 100%;
+    span {
+        display: block;
+        padding-top: 1vw;
+    }
+
+    span::before {
+        content: attr(data-text);
+    }
+}
+
