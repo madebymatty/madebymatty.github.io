@@ -5,7 +5,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=6.0, minimum-scale=1.0">
 
-    <title>Speaking &mdash; Matty Woods &mdash; Developer &mdash; mattywoods.co.uk</title>
+    <title>Matty Woods &mdash; Developer &mdash; mattywoods.co.uk</title>
     <meta name="description" content="I am Matty, building digital products and experiences. I spend my days and sometimes nights developing and designing pretty things for the web.">
     <meta name="author" content="Matty Woods">
 
@@ -21,24 +21,117 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127647737-1"></script>
+    <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127647737-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'UA-127647737-1');
-    </script>
+    </script>-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;900&display=swap" rel="stylesheet">-->
 
-    <link rel="stylesheet" href="build/assets/css/styles.min.css?v=1.0">
+    
 
+    <style>
+        @font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-cSZMdeX3rsHo.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-eCZMdeX3rsHo.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-cyZMdeX3rsHo.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-ciZMdeX3rsHo.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l5-fCZMdeX3rg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52_wFZVcf6hPvhPUWH.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52_wFZXMf6hPvhPUWH.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52_wFZV8f6hPvhPUWH.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52_wFZVsf6hPvhPUWH.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/merriweather/v22/u-4n0qyriQwlOrhSvowK_l52_wFZWMf6hPvhPQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+    </style>
+<link rel="stylesheet" href="build/assets/css/styles.min.css?v=1.0">
 </head>
 
 <body>
+    <section class="notification" aria-label="Cookie banner"><p>This website is currently a living work in progress and will be continually updated, until I'm happy [▪‿▪]</p></section>
     <header class="header">
     
         <nav class="grid-container-25" aria-label="Matty Woods navigation">
@@ -79,23 +172,84 @@
     </header>
     
     <main class="content grid-container-25">
-        <div class="grid-col-md-1of3"></div>
-        <div class="grid-col-md-2of3 margin-right">
-            <h1 class="heading1" id="main-heading">Speaking</h1>
-            <p>I spend my days and sometimes nights developing and designing pretty things for the web. I'm based in London and I'm part of a lovely team of digital/creative people at The University of the Arts London. This website is a small place I can share my thoughts, showcase my talents and play with new ideas.</p>
-            <div>
-                <iframe width="560" height="315" style="background-color: #FFFFFF" src="https://www.youtube.com/embed/jR1LlrTbyo8" title="YouTube embedded video of Matt Woods" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+        <div class="grid-col-md-1of3">
+           
                 
         </div>
+        <div class="grid-col-md-2of3 margin-right">
+            <h1 class="pull" id="main-heading">
+                Speaking
+                <span></span>
+            </h1>
+            <section>
+                <article style="margin-bottom: 4vw;">
+                    <h2 class="heading1">Unifying your team to work collaboratively</h1>
+                    <date>Frontend London - 28 February 2019</date>
+                    <div><iframe width="560" height="315" style="background-color: #FFFFFF" src="https://www.youtube.com/embed/jR1LlrTbyo8" title="YouTube embedded video of Matt Woods" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </article>
+                <article style="margin-bottom: 4vw;">
+                    <h2 class="heading1">Embedding accessibility testing into agile development</h1>
+                    <date>Univeristy of the Arts London - Tech for All - 2 February 2021</date>
+                    <p>Matt Woods and Andy Ronksley share how the digital team at UAL has implemented manual and automated accessibility testing into their agile development, and the benefits of doing so.</p>
+                </article>
+            </section>
+        </div>
+
+        <!--<div class="grid-col-md-1of3">
+            <div style="background:#f1f1f1">x</div>
+        </div>
+        <div class="grid-col-md-1of3">
+            <div style="background:#f1f1f1">x</div>
+        </div>
+        <div class="grid-col-md-1of3">
+            <div style="background:#f1f1f1">x</div>
+        </div>-->
     </main>
 
     <footer class="footer grid-container-25">
-        <div class="grid-col-md-1of3"><p>Slogan</p></div>
-        <div class="grid-col-md-2of3"><p>Menu</p></div>
-        <div class="grid-col-full-inner"><p>Copyright 2021 &copy; Matty Woods</p></div>
+        <div class="grid-col-md-1of3">
+            <p class="footer-slogan">
+                Putting
+                <span>Accessibility</span>
+                <span>First</span>
+            </p>
+        </div>
+        <div class="grid-col-md-2of3">
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="about-matty.html">About Matty</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Articles</a>
+                    </li>
+                    <li>
+                        <a href="start-project.html">Start a project</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/mjaywoods/">CV (Linkedin)</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+        </div>
+        <div class="grid-col-full-inner"><p>&copy; 2004-2021 &dash; Matty Woods.</p></div>
     </footer>
 
     <!--<script src="build/assets/js/scripts.js"></script>-->
 </body>
 </html>
+
+
+
+
+
+
+
