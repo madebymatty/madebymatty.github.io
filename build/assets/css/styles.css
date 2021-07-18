@@ -30,6 +30,7 @@ p {
 .pull {
   line-height: 2em;
   font-size: 2em;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -39,10 +40,11 @@ p {
 .pull span {
   border-bottom: 10px solid #ffdc62;
   display: block;
-  width: 128px;
+  width: 174px;
   position: absolute;
   bottom: 16px;
   z-index: -1;
+  transform: skew(-4deg) rotate(-1deg);
 }
 
 /*
