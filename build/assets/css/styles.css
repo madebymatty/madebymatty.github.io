@@ -36,19 +36,31 @@ p {
   position: relative;
   margin-bottom: 2vw;
 }
-
-.pull::before {
-  content: "";
+.pull span {
+  border-bottom: 10px solid #ffdc62;
+  display: block;
+  width: 128px;
   position: absolute;
-  left: 84px;
   bottom: 16px;
-  width: 174px;
-  height: 14px;
-  transform: skew(-4deg) translateX(-50%) rotate(-1deg);
-  background: #FFDC62;
   z-index: -1;
 }
 
+/*
+.pull::before {
+    content: "";
+    position: absolute;
+    left: 84px;
+    bottom: 16px;
+    width: 174px;
+    height: 14px;
+    transform: skew(
+        -4deg
+        ) translateX(-50%) rotate(
+        -1deg
+        );
+    background: #FFDC62;
+    z-index: -1;
+  }*/
 .heading1, .heading2, .heading3, .heading4, .heading5, .heading6 {
   margin: 0px;
   padding: 0px;

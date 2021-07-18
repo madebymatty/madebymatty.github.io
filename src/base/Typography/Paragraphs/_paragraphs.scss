@@ -11,8 +11,17 @@ p {
     z-index: 1;
     position: relative;
     margin-bottom: 2vw;
-}
 
+    span {
+        border-bottom: 10px solid #ffdc62;
+    display: block;
+    width: 128px;
+    position: absolute;
+    bottom: 16px;
+    z-index: -1;
+    }
+}
+/*
 .pull::before {
     content: "";
     position: absolute;
@@ -27,5 +36,5 @@ p {
         );
     background: #FFDC62;
     z-index: -1;
-  }
+  }*/
 
