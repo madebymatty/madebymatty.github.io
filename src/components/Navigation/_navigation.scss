@@ -88,3 +88,33 @@ ul.hiddenlinks {
         }
     }
 }
+
+
+@media (min-width: $break-desktop) {
+  
+    ul.navigation {
+      
+    }
+  }
+  
+  @media only screen and (min-width: $break-mobile) and (max-width: $break-tablet) {
+    
+    ul.navigation {
+        grid-column: 1/span 25;
+        padding:0;
+        margin:0;
+        li {
+            display: block;
+            text-align:center;
+            padding-bottom: 2vw;
+            padding-right: 0;
+        }
+      }
+
+      .logo {
+        text-align:center;
+        margin-bottom: 8vw;
+        margin-top: 4vw;
+      }
+    
+  }
