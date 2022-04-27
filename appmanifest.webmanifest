@@ -1,0 +1,24 @@
+{
+    "lang": "en",
+    "dir": "ltr",
+    "name": "Matty Woods",
+    "short_name": "MattyWoods",
+    "icons": [{
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }, {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192"
+    }, {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32"
+    }],
+    "scope": "/",
+    "id": "mattywoods",
+    "start_url": "/index.html",
+    "display": "fullscreen",
+    "orientation": "landscape",
+    "theme_color": "black",
+    "background_color": "black"
+  }
