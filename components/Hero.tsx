@@ -47,12 +47,12 @@ export const Hero: React.FC = () => {
           <div className="max-w-3xl text-center lg:text-left mx-auto lg:mx-0">
             <div className="animate-fade-in-up delay-100 inline-flex items-center gap-2 px-4 py-2 mb-8 text-sm font-semibold tracking-wider text-emerald-400 uppercase bg-emerald-500/10 rounded-full border border-emerald-500/20">
               <Terminal size={14} />
-              <span>Senior Full Stack Developer</span>
+              <span>Senior Software Engineer &amp; Leader</span>
             </div>
             
             <h1 className="animate-fade-in-up delay-200 text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight">
-              Building Inclusive <br />
-              <span className="text-emerald-400">Digital Experiences</span>
+              Driving Digital  <br />
+              <span className="text-emerald-400">Innovation</span>
             </h1>
             
             <p className="animate-fade-in-up delay-300 text-lg text-slate-300 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0">
@@ -115,7 +115,7 @@ export const Hero: React.FC = () => {
                       <span className="text-purple-400">const</span> <span className="text-blue-400">MattWoods</span> = () <span className="text-purple-400">=&gt;</span> {'{'}<br/>
                       &nbsp;&nbsp;<span className="text-purple-400">return</span> (<br/>
                       &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span className="text-yellow-200">Developer</span><br/>
-                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-300">name</span>=<span className="text-green-400">"Matt Woods"</span><br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-300">name</span>=<span className="text-green-400">"Matty Woods"</span><br/>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-300">role</span>=<span className="text-green-400">"Senior Founder"</span><br/>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-300">experience</span>={'{'}<span className="text-orange-400">20</span>{'}'}<br/>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span className="text-blue-300">focus</span>={'{['}<span className="text-green-400">"Accessibility"</span>, <span className="text-green-400">"React"</span>{']}'}<br/>

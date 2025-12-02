@@ -20,33 +20,7 @@ export const Skills: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-12 items-start">
-        {/* Chart Section */}
-        <div className="lg:col-span-1 bg-white p-6 rounded-2xl shadow-sm border border-slate-100 h-96">
-          <h3 className="text-lg font-bold text-slate-900 mb-4 text-center">Focus Distribution</h3>
-          <ResponsiveContainer width="100%" height="100%">
-            <PieChart>
-              <Pie
-                data={FOCUS_DATA}
-                cx="50%"
-                cy="50%"
-                innerRadius={60}
-                outerRadius={80}
-                paddingAngle={5}
-                dataKey="value"
-              >
-                {FOCUS_DATA.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={entry.color} stroke="none" />
-                ))}
-              </Pie>
-              <Tooltip 
-                contentStyle={{ borderRadius: '8px', border: 'none', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)' }}
-              />
-              <Legend verticalAlign="bottom" height={36} />
-            </PieChart>
-          </ResponsiveContainer>
-        </div>
-
+      <div className="grid gap-12">
         {/* Skills Grid */}
         <div className="lg:col-span-2 grid sm:grid-cols-2 gap-6">
           {SKILLS.map((skillGroup) => (

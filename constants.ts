@@ -9,13 +9,13 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const PROFILE = {
-  name: 'Matt Woods',
+  name: 'Matty Woods',
   role: 'Senior Developer & Founder',
   email: 'matt@codingmonsters.com',
   phone: '+44 07745587848',
   linkedin: 'https://www.linkedin.com/in/mattywoods/',
-  location: 'Vietnam / Da Nang',
-  summary: "Innovative developer and founder with over 20 years’ experience delivering web and mobile solutions for global brands, startups, and educational institutions. Skilled across the full stack with expertise in HTML, CSS, JavaScript, React, React Native, PHP, Node.js, and modern frameworks. Proven leader in building and managing development teams. Recognised for advancing digital accessibility, leading UAL’s React-based design system, and implementing automated WCAG compliance processes."
+  location: 'Vietnam / Da Nang and United Kingdom / London',
+  summary: "Innovative developer and founder with over two decades of experience delivering web and mobile solutions for global brands, startups, and educational institutions. Skilled across the full stack with expertise in HTML, CSS, JavaScript, React, React Native, PHP, Node.js, and modern frameworks. Proven leader in building and managing development teams. Recognised for advancing digital accessibility, leading UAL’s React-based design system, and implementing automated WCAG compliance processes. Experienced in AI development, including working with large language models, creating and training Python-based models, and integrating practical AI solutions into real products."
 };
 
 export const EXPERIENCE: Job[] = [
@@ -129,11 +129,31 @@ export const SKILLS: SkillCategory[] = [
   },
   {
     category: 'Design',
-    items: ['Figma', 'Adobe Photoshop', 'Storyline', 'Evolve']
+    items: ['Figma', 'Adobe Photoshop', 'Storyline', 'Evolve', 'Branding', 'Typography', 'Illustration', 'UI/UX', 'Wireframes', 'Prototyping']
+  },
+  {
+    category: 'AI & Machine Learning',
+    items: [
+      'LLMs (GPT, Claude, Gemini)',
+      'OpenAI API',
+      'Python AI/ML Development',
+      'Model Training & Fine-tuning',
+      'Computer Vision',
+      'Vector Databases',
+      'AI Video Generation',
+      'AI Audio Processing',
+      'Prompt Engineering',
+      'AI Integration'
+    ]
   }
 ];
 
 export const ACHIEVEMENTS: Achievement[] = [
+  {
+    title: 'Coding Monsters Vietnam',
+    description: 'Founded a coding school in Vietnam dedicated to teaching programming skills to underprivileged children, providing them with valuable technical skills and opportunities for a better future through technology education.',
+    link: 'https://www.codingmonsters.com'
+  },
   {
     title: 'UAL Design System',
     description: 'Led the development of the UAL (University of the Arts London) design system and pattern library.',
@@ -173,11 +193,18 @@ export const SPEAKING: SpeakingEngagement[] = [
   {
     event: 'TechSoft',
     location: 'Da Nang, Vietnam',
-    topic: 'Embedding accessibility testing into agile development & Facial recognition using NextJS'
+    topic: 'Implementing Cross-Platform Facial Recognition with TensorFlowJS and Node',
+    year: 2024
   },
   {
     event: 'SpaceA',
     location: 'Da Nang, Vietnam',
     topic: 'Web Accessibility'
+  },
+  {
+    event: 'TechSoft',
+    location: 'Da Nang, Vietnam',
+    topic: 'Embedding accessibility testing into agile development',
+    year: 2023
   }
 ];

@@ -23,6 +23,7 @@ export interface SpeakingEngagement {
   location: string;
   topic: string;
   link?: string;
+  year?: number;
 }
 
 export interface NavItem {
