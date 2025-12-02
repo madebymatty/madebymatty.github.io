@@ -1,39 +1,20 @@
-## Welcome to GitHub Pages
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-THEO
+# Run and deploy your AI Studio app
 
-You can use the [editor on GitHub](https://github.com/madebymatty/madebymatty.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This contains everything you need to run your app locally.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+View your app in AI Studio: https://ai.studio/apps/drive/1FvA65Gwgo5Vs5XUWwWJ88CDRYwzCJTqG
 
-### Markdown
+## Run Locally
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**Prerequisites:**  Node.js
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/madebymatty/madebymatty.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
